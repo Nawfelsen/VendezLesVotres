@@ -1,0 +1,38 @@
+extends layout
+
+block scripts
+  script(src='/javascripts/register.client.js')
+
+block content
+  
+  form(id="form-register" method="POST" action="/access/register")
+    i(class="biggest bi-person-circle")
+    h1 Bienvenue sur SellYours
+    p(id="problem")
+
+    // input name
+    div(class="form-outline mb-4")
+      div(class="input-group mb-2")
+        div(class="input-group-prepend")
+          div(class="input-group-text")
+            i(class="bi-person-circle")
+        input(type="text" id="username" class="form-control" name="username" placeholder="Nom") 
+    
+    //input login
+    div(class="form-outline mb-4")
+      div(class="input-group mb-2")
+        div(class="input-group-prepend")
+          div(class="input-group-text") @
+        input(type="text" id="userlogin" class="form-control" name="userlogin" placeholder="Login") 
+    
+    //input password
+    div(class="form-outline mb-4")
+      div(class="input-group mb-2")
+          div(class="input-group-prepend")
+            div(class="input-group-text")
+              i(class="bi-lock")
+          input(type="password" id="userpassword" class="form-control" name="userpassword" placeholder="Mot de passe")
+    
+    //input button (connexion or create account)
+    input(type="button" id="register" class="btn btn-success" name="register" value="Créer le compte")
+    input(type="button" id="connexion" class="btn btn-primary" name="register" onClick="window.location.href='/access/login'" value="Se connecter")

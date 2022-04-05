@@ -1,0 +1,145 @@
+
+h1 {
+  text-align: center;
+  margin-bottom:60px; 
+}
+#first {
+  text-align: center;
+  font-size:60px;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+
+}
+body {
+  background: #327ED5;
+  background: -webkit-linear-gradient(top left, #327ED5, #D90BC1);
+  background: -moz-linear-gradient(top left, #327ED5, #D90BC1);
+  background: linear-gradient(to right, #327ED5, #D90BC1);
+  text-align: center;
+  padding-top: 150px;
+}
+
+form{
+  width:400px;
+  border: 1px black;
+  border-radius: 10px;
+  padding: 1%;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+#form-login{
+  padding-bottom: 30px;
+}
+
+#form-register{
+  padding-bottom: 50px;
+}
+
+.biggest{
+  font-size: 2.5em;
+}
+
+#login, #register{
+  margin-right: 5px;
+  float: right;
+}
+
+#account, #connexion{
+  margin-left: 5px;
+  float: left;
+}
+
+.content{
+  width:800px;
+  border: 1px black;
+  border-radius: 10px;
+  padding: 1%;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+}
+
+#my-items, #shop, #last-items, #form-add{
+  background: #9db6ff;
+  background: -webkit-linear-gradient(top left, #c6d3f9, #b4a9c9);
+  background: -moz-linear-gradient(top left,#c6d3f9, #b4a9c9);
+  background: linear-gradient(to bottom right, #c6d3f9, #b4a9c9);
+  border: 1px black;
+  border-radius: 10px;
+  padding: 1%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  width: 450px;
+}
+
+#my-items:hover, #shop:hover, #last-items:hover, #form-add:hover , #info:hover{
+  background: #7495FC;
+  background: -webkit-linear-gradient(top left, #b6c8ff, #A593C6);
+  background: -moz-linear-gradient(top left, #bacbff, #A593C6);
+  background: linear-gradient(to bottom right, #bbccff, #A593C6);
+  transform:scale(1.1);
+  box-shadow: 10px 5px 5px #bbccff ;
+}
+
+#form-add{
+  margin-top: 280px;
+}
+
+#info{
+  background: #7495FC;
+  background: -webkit-linear-gradient(top left, #b6c8ff, #A593C6);
+  background: -moz-linear-gradient(top left, #bacbff, #A593C6);
+  background: linear-gradient(to bottom right, #bbccff, #A593C6);
+  border: 1px black;
+  border-radius: 10px;
+  padding: 1%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 250px;
+  float: left;
+}
+
+
+td{
+  max-width: 120px;
+  width:120px;
+  padding-left: auto;
+  padding-right: auto;
+  word-wrap: break-word;
+}
+
+
+#itemToSell, #itemToBuy, #lastItem{
+  margin-top: 50px;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+#problem{
+  color: red;
+}
+
+.bi-github{
+  padding-bottom: 50px;
+}
+
+#add-money{
+  background: #7495FC;
+  background: -webkit-linear-gradient(top left, #b6c8ff, #A593C6);
+  background: -moz-linear-gradient(top left, #bacbff, #A593C6);
+  background: linear-gradient(to bottom right, #bbccff, #A593C6);
+  width: auto;
+}
+
+#logout{
+    float:right;
+}
+
+
+

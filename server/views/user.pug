@@ -1,0 +1,61 @@
+extends layout
+
+block scripts
+  script(src='/javascripts/user.client.js')
+
+
+block content
+
+  h1#first Vendez les votres
+  
+  div(class="content")
+    // input logout
+    input(type="button" id="logout" class="btn btn-danger" value="Déconnexion")
+    div#info
+      p#name
+      p#money
+      form#add-money
+        div(class="input-group mb-2")
+          div(class="input-group-prepend")
+            div(class="input-group-text") €
+          input(type="number" id="moneyToAdd" class="form-control" name="addMoney" placeholder="Argent") 
+
+        input(type="button" id="addMoney" class="btn btn-success" value="+")
+
+    // FORM TO ADD item
+    form#form-add
+      p(id="problem")
+      //input description
+      div(class="input-group mb-2")
+        div(class="input-group-prepend")
+          div(class="input-group-text") #
+        input(type="text" id="description" class="form-control" name="description" placeholder="Description") 
+        
+      // input price
+      div(class="input-group mb-2")
+        div(class="input-group-prepend")
+          div(class="input-group-text") €
+        input(type="number" id="price" class="form-control" name="price" placeholder="Prix") 
+      
+      // input sell item
+      input(type="button" id="sellItem" class="btn btn-primary" value="Vendre l'objet")
+
+    // MY ITEMS
+    div#my-items
+      i(class="biggest bi-basket")
+      h1 Mes objets
+      table#itemToSell
+      
+    // SHOP
+    div#shop
+      i(class="biggest bi-shop")
+      h1 Magasin
+      table#itemToBuy
+
+    // LAST BUY
+    div#last-items
+      i(class="biggest bi-check")
+      h1 Dernier achat
+      table#lastItem
+
+    

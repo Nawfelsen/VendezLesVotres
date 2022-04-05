@@ -1,0 +1,32 @@
+extends layout
+
+block scripts
+  script(src='/javascripts/login.client.js')
+
+block content
+    
+    form(id="form-login" method="POST" action="/access/login")
+      i(class="biggest bi-shop")
+      h1 Bienvenue sur SellYours
+      p(id="problem")
+      
+      //input login
+      div(class="form-outline mb-4")
+        div(class="input-group mb-2")
+          div(class="input-group-prepend")
+            div(class="input-group-text") @
+          input(type="text" id="userlogin" class="form-control" name="userlogin" placeholder="Login") 
+      
+      //input password
+      div(class="form-outline mb-4")
+        div(class="input-group mb-2")
+          div(class="input-group-prepend")
+            div(class="input-group-text")
+              i(class="bi-lock")
+          input(type="password" id="userpassword" class="form-control" name="userpassword" placeholder="Mot de passe") 
+        
+        br
+
+        //input button (connexion or create account)
+        input(type="button" id="login" class="btn btn-success" name="login" value="Connexion") 
+        input(type="button" id="account" class="btn btn-primary" name="register" onClick="window.location.href='/access/register'" value="Créer un compte")
