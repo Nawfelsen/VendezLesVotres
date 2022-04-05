@@ -7,7 +7,10 @@ Nawfel Senoussi
 -------------------------------------
 ## **Présentation du TP**
 
-Le but de ce projet est réalisé une application permettant de vendre des objets et de pouvoir les acheter via différents comptes
+Le but de ce projet est de réaliser une application permettant de vendre des objets et de pouvoir les acheter via différents comptes.
+
+Cette application est une SPA.
+
 
 -------------------------------------
 ## **HowTo**
